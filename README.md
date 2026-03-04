@@ -57,6 +57,7 @@ pip install -r requirements.txt
 
 ```
 
+4.0. Antes, edite o 'main.py' na linha 30, vou na variavel 'repo_clone' troque o 'L-0-W' para o nome da sua conta do github
 
 4. Inicie o script:
 ```bash
