@@ -26,6 +26,7 @@ def executar():
             print("Pasta não iniciada!, continuando")
 
         try:    
+            # mude para a usa conta: https://github.com/seuusuario/{gitRepName}.git
             repo_clone = f"https://github.com/L-0-W/{gitRepName}.git"
             repo = Repo.clone_from(repo_clone, gitRepName)
         except:
@@ -67,4 +68,5 @@ def executar():
 if __name__ == '__main__':
     print("🔥 Servidor de Automação Rodando em http://localhost:3000")
     print("Aguardando capturas da extensão...")
+
     app.run(port=3000)
