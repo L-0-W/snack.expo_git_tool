@@ -53,8 +53,7 @@ source venv/bin/activate
 
 3. Instale as dependências necessárias:
 ```bash
-pip install -r requirements.txt
-
+pip install -r requirements.txt ou python -m pip install -r requirements.txt
 ```
 
 4.0. Antes, edite o 'main.py' na linha 30, ou na variavel 'repo_clone' troque o 'L-0-W' para o nome da sua conta do github
