@@ -70,4 +70,4 @@ def executar():
 if __name__ == '__main__':
     print("🔥 Servidor de Automação Rodando em http://localhost:3000")
     print("Aguardando capturas da extensão...")
-    app.run(port=8080)
+    app.run(port=3000)
