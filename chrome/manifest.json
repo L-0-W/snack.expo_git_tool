@@ -1,16 +1,17 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Snack Interceptor",
   "version": "1.0",
   "permissions": [
     "webRequest",
-    "scripting"
-  ],
-  "host_permissions": [
+    "webRequestBlocking",
+    "tabs",
+    "scripting",
     "*://exp.host/*",
     "*://snack.expo.dev/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"],
+    "persistent": true
   }
 }
