@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import CORS
 from git import Repo
 import requests
 from zipfile import ZipFile
@@ -8,6 +9,7 @@ import shutil
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/executar', methods=['GET'])
 def executar():
@@ -68,5 +70,4 @@ def executar():
 if __name__ == '__main__':
     print("🔥 Servidor de Automação Rodando em http://localhost:3000")
     print("Aguardando capturas da extensão...")
-
-    app.run(port=3000)
+    app.run(port=8080)
