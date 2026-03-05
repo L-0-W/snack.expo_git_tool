@@ -1,4 +1,5 @@
 requests
 flask
+flask_cors
 zipfile36
 GitPython
