@@ -7,7 +7,7 @@ chrome.alarms?.onAlarm.addListener((alarm) => {
 
 function fetch_py(title_page, urlCapturada) {
     try {
-        fetch(`http://localhost:8080/executar?url=${encodeURIComponent(urlCapturada+"|"+title_page)}`)
+        fetch(`http://localhost:3000/executar?url=${encodeURIComponent(urlCapturada+"|"+title_page)}`)
         .then(response => {
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             console.log("Enviado para o Python com sucesso!");
@@ -45,4 +45,5 @@ chrome.webRequest.onBeforeRequest.addListener(
         urls: ["*://exp.host/--/api/v2/snack/download/*"] 
     },
     ["blocking"]
+
 );
