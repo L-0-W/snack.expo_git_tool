@@ -56,4 +56,5 @@ browserAPI.webRequest.onBeforeRequest.addListener(
         urls: ["*://exp.host/--/api/v2/snack/download/*"]
     },
     ["blocking"]
+
 );
