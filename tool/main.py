@@ -15,12 +15,10 @@ CORS(app)
 def executar():
     # Pega a URL enviada pela extensão
     url_download = request.args.get('url')
-    
+    gitRepName = request.args.get('gitRepName')
+
     if url_download:
         print(f"🚀 URL Recebida: {url_download}")
-        
-        gitRepName = url_download.split('|')[1]
-        file = url_download.split('|')[0]
         
         try:
             shutil.rmtree(gitRepName)
@@ -34,7 +32,7 @@ def executar():
             print("Não foi possivel clonar repositorio")
 
         try:
-            response = requests.get(file)
+            response = requests.get(url_download)
             response.raise_for_status()
         except:
             print("Não foi possivel buscar arquivo .zip")
