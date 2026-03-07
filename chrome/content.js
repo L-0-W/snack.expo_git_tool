@@ -5,7 +5,6 @@ const githubSvg = `
 `;
 
 
-
 function injectGithubIcon() {
   if (document.getElementById('custom-github-icon')) return;
 
