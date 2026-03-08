@@ -6,7 +6,7 @@ Este projeto permite automatizar a exportação de atividades do Expo Snack dire
 
 Antes de começar, certifique-se de ter instalado:
 
-* **Google Chrome** ou **Brave Browser**.
+* **Google Chrome** ou **Firefox**.
 * **Python 3.x** instalado.
 * **Git** logado.
 ---
@@ -19,12 +19,12 @@ Para que o script consiga interagir com o navegador, é necessário carregar a e
 
 1. Abra o seu navegador e acesse o link:
 * **Chrome:** `chrome://extensions/`
-* **Brave:** `brave://extensions/`
+* **Firefox:** `about:debugging#/runtime/this-firefoxabout:debugging#/runtime/this-firefox`
 
 
-2. No canto superior direito, habilite o **Modo do Desenvolvedor** (*Developer mode*).
+2. No canto superior direito, habilite o **Modo do Desenvolvedor** (*Developer mode*). Firefox: **Carregar Extensão Temporaria**
 3. Clique no botão **Carregar sem compactação** (*Load unpacked*).
-4. Selecione a pasta `/chrome` presente na raiz deste repositório.
+4. Selecione a pasta `/extension` presente na raiz deste repositório. Firefox: **Selecione o arquivo manifest.json**
 
 ### 2. Configuração do Script Python
 
