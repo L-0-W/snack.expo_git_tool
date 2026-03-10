@@ -18,7 +18,7 @@ Antes de começar, certifique-se de ter instalado:
 Para que o script consiga interagir com o navegador, é necessário carregar a extensão inclusa:
 
 1. Abra o seu navegador e acesse o link:
-* **Chrome:** `chrome://extensions/`
+* **Chrome:** `chrome://extensions/` **Troque o manifesto que esta localizado no chrome pelo que esta em extension**
 * **Firefox:** `about:debugging#/runtime/this-firefoxabout:debugging#/runtime/this-firefox`
 
 

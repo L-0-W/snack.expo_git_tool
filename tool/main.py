@@ -4,7 +4,7 @@ from git import Repo
 import requests
 from zipfile import ZipFile
 from io import BytesIO
-import shutil
+import subprocess
 
 
 
@@ -21,7 +21,7 @@ def executar():
         print(f"🚀 URL Recebida: {url_download}")
         
         try:
-            shutil.rmtree(gitRepName)
+            subprocess.check_call(['powershell', '-Command', 'Remove-Item', '-Recurse', '-Force', gitRepName])
         except:
             print("Pasta não iniciada!, continuando")
 
@@ -33,7 +33,7 @@ def executar():
             print("Não foi possivel clonar repositorio")
 
         try:
-            response = requests.get(url_download)
+            response = requests.get(url_download, verify=False)
             response.raise_for_status()
         except:
             print("Não foi possivel buscar arquivo .zip")
